@@ -1,0 +1,623 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --first: #8E2110;
+    --second: #3f4c5f;
+    --third: #f5cac2;
+    --fourth: #a15246;
+    --accent: #303179;
+}
+    
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/****************GLOBAL SETTINGS***************/
+
+.section {
+    margin: 0;
+    padding: 40px 0;
+}
+
+.section:nth-child(2n) {
+    background: linear-gradient(207deg, var(--third) 0%, #ffffff 30%, var(--third) 100%);
+}
+
+.section:nth-child(2n+1) {
+    background-color: #fff;
+}
+
+.container {
+    width: 87%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden-from-mobile {
+    display: none;
+}
+
+
+/****************TEXT STYLING***************/
+
+p, span, h4, .header-author-title, .dates, .blog-arrow, ul, .icon-text  {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, .project-title-overlay, .arrow, .my-thoughts-extra-title, .blog-small-title, .skills-title, .icon-text, .footer-title  {
+    font-weight: bold;
+}
+
+p, span, h4, .dates, .arrow, .blog-arrow, ul {
+    font-size: 17px;
+    line-height: 29px;
+}
+
+h2, h3, .my-thoughts-extra-title, .tech-text, .project-title-overlay, .tag-wrapper p, .small-text-skills, .icon-text, .footer-title, .contact-text {
+    text-align: center;
+}
+
+.dates, .blog-small-title  {
+    text-decoration: underline;
+}
+
+h2, .project-title-overlay, .tag-wrapper p, .footer-title, .contact-text {
+    color: #fff;
+}
+
+.projects-small-title, .arrow, .dates, .blog-arrow, .skills-title {
+    color: var(--first);
+}
+
+.header-author-title {
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+}
+
+.header-main-title {
+    font-size: 40px;
+    line-height: 49px;
+}
+
+.header-subtitle {
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.intro-line {
+    border: 1px solid var(--first);
+    width: 55px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.intro-dot {
+    height: 11px;
+    width: 11px;
+    background-color: var(--first);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.intro-text, .tech-text, .tech-highlighted-text, .my-thoughts-extra-title {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2, .my-thoughts-extra-title {
+    font-size: 22px;
+    line-height: 27px;
+    background-color: var(--fourth);
+    padding: 2px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+.tech-text {
+    padding-top: 0;
+}
+
+.project-title-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.arrow {
+    letter-spacing: 0.01em;
+}
+
+.tag-wrapper p {
+    font-size: 14px;
+    line-height: 11px;
+    letter-spacing: 0.01em;
+    background-color: var(--accent);
+    margin-right: 8px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+h3 {
+    font-size: 21px;
+    line-height: 25px;
+    color: var(--fourth);
+}
+
+.projects-small-title:hover {
+    z-index: 2;
+    color: #BE9DA9;
+}
+
+.other-projects-title {
+    margin-top: 56px;
+    margin-bottom: 21px;
+}
+
+.blog-title {
+    font-size: 21px;
+    line-height: 30px;
+}
+
+.blog-text {
+    line-height: 32px;
+}
+
+.blog-arrow {
+    line-height: 32px;
+}
+
+.more-thoughts-title {
+    margin-bottom: 40px;
+    margin-top: 56px;
+}
+
+.dates {
+    line-height: 29px;
+}
+
+.skills-section-title {
+    margin-bottom: 32px;
+}
+
+.icon-text {
+    color: var(--second);
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.footer-title {
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.contact-text {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+
+/****************IMAGES AND ICONS***************/
+
+.header-icon-image {
+    width: 40px;
+}
+
+.header-image {
+    width: 180px;
+    position: absolute;
+    border-radius: 50%;
+    right: 5%;
+    bottom: -3%;
+    border: 2px solid var(--third);
+}
+
+.project-image {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    border-radius: 6px;
+    box-shadow: 0px 10px 13px -7px var(--fourth);
+}
+
+.my-thoughts-image {
+    width: 100%;
+    margin-bottom: 32px;
+    border-radius: 6px;
+    box-shadow: 0px 10px 13px -7px var(--fourth);
+}
+
+.for-more-icon-image {
+    width: 60px;
+}
+
+
+/****************HEADER SECTION***************/
+
+.header {
+    height: 520px;
+    background-image: url('./images/header-background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 74%;
+    background-position-y: 60%;
+    position: relative;
+}
+
+.header-container {
+    height: 100%;
+    display: flex;
+}
+
+.header-icon-wrapper {
+    position: absolute;
+    top: 9%;
+    right: 5%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.header-text-group {
+    position: absolute;
+    left: 4%;
+    top: 23%;
+    color: var(--second);
+}
+
+/****************PROJECTS SECTION***************/
+
+.featured-projects-container {
+    display: grid;
+}
+
+.featured-projects-container, .other-projects-container {
+    width: 100%;
+}
+
+
+.project-card-margin {
+    margin-bottom: 32px;
+}
+
+.project-image-group {
+    position: relative;
+}
+
+.project-image-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #f5cac2de;
+    border-radius: 6px;
+}
+
+.project-text-group {
+    padding-top: 15px;
+    position: relative;
+}
+
+.tag-wrapper {
+    display: flex;
+    margin-top: 10px;
+}
+
+.other-projects {
+    margin-bottom: 32px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #BE9DA9;
+}
+
+.link-styler {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+
+/****************MY THOUGHTS SECTION***************/
+
+.my-thoughts-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: flex;
+}
+
+.more-thoughts-container {
+    width: 100%;
+}
+
+.more-thoughts-group {
+    margin-bottom: 24px;
+}
+
+
+/****************SKILLS SECTION***************/
+
+.skills-parent {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 44%);
+    justify-content: center;
+    column-gap: 12%;
+    row-gap: 5%;
+    margin-bottom: 5%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/****************FOR MORE SECTION***************/
+
+.for-more-icons-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.for-more-icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+
+/****************FOOTER SECTION***************/
+
+.footer-background {
+    margin: 0;
+    padding: 40px 0;
+    background-color: var(--fourth);
+     /* #8E2110; */
+}
+
+.footer-wrapper {
+    margin-top: 20px;
+    margin-bottom: 44px;
+}
+
+
+/****************MEDIA QUERY FOR TABLET AND LAPTOPS***************/
+
+@media screen and (min-width: 768px) {
+
+    .section {
+        padding: 60px 0;
+    }
+    .container {
+        width: 70%;
+    }
+    .hidden-from-mobile {
+        display: inline-block;
+    }
+    p, span, h4, .dates, .arrow, .blog-arrow, ul, .icon-text, .intro-text, .tech-text, .contact-text, .tech-highlighted-text {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .header-author-title {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .header-main-title {
+        font-size: 50px;
+        line-height: 55px;
+    }
+    .header-subtitle {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    h2, .my-thoughts-extra-title {
+        font-size: 30px;
+        line-height: 30px;
+        padding: 5px;
+        letter-spacing: 0.01em;
+    }
+    .my-thoughts-extra-title {
+        margin-bottom: 0;
+    }
+    h3 {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 40px;
+    }
+    .tech-highlighted-text {
+        color: var(--accent);
+    }
+    .other-projects-title {
+        margin-top: 90px;
+        margin-bottom: 30px;
+    }
+    .projects-title-desktop, .projects-text-desktop {
+        display: inline;
+        text-decoration: underline;
+    }
+    .header-icon-image {
+        width: 60px;
+    }
+    .header-image {
+        width: 200px;
+        right: 10%;
+    }
+    .header {
+        height: 560px;
+    }
+    .header-text-group {
+        left: 10%;
+        top: 30%;
+    }
+    .header-icon-wrapper {
+        top: 12%;
+        right: 10%;
+    }
+    .featured-projects-container {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        justify-content: center;
+        grid-gap: 5%;
+    }
+    .project-text-group {
+        padding-top: 45px;
+    }
+    .project-image-group:hover .project-image-overlay {
+        display: none;
+    }
+    .project-image-group:hover .project-title-overlay {
+        display: none;
+    }
+    .my-thoughts-wrapper {
+        gap: 57px;
+    }
+    .skills-parent {
+        grid-template-columns: repeat(3, 23%);
+        column-gap: 15%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .section {
+        padding: 90px 0;
+    }
+    .container {
+        width: 57%;
+    }
+    .header-author-title {
+        font-size: 28px;
+        line-height: 37px;
+    }
+    .header-main-title {
+        font-size: 82px;
+        line-height: 100px;
+    }
+    .header-subtitle {
+        font-size: 50px;
+        line-height: 78px;
+    }
+    p, span, h4, .dates, .arrow, .blog-arrow, ul, .icon-text {
+        font-size: 25px;
+        line-height: 41px;
+    }
+    .intro-text, .tech-text, .contact-text, .tech-highlighted-text {
+        font-size: 30px;
+        line-height: 50px;
+    }
+    h2, .my-thoughts-extra-title {
+        font-size: 43px;
+        line-height: 59px;
+        padding: 5px;
+        margin-bottom: 70px;
+        letter-spacing: 0.01em;
+    }
+    .my-thoughts-extra-title {
+        margin-bottom: 0;
+    }
+    h3 {
+        font-size: 38px;
+        line-height: 47px;
+        margin-bottom: 40px;
+    }
+    .other-projects-title {
+        margin-top: 128px;
+    }
+    .projects-title-desktop, .projects-text-desktop, .arrow {
+        line-height: 33px;
+    }
+    .arrow {
+        text-decoration: underline;
+    }
+    .tag-wrapper p {
+        font-size: 16px;
+        line-height: 21px;
+        margin-right: 8px;
+        padding: 5px;
+    }
+    .blog-title {
+        font-size: 30px;
+    }
+    .more-thoughts-title {
+        margin-top: 44px;
+    }
+    .blog-small-title {
+        line-height: 33px;
+    }
+    .blog-text-group {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .footer-title {
+        font-size: 38px;
+        line-height: 47px;
+        margin-bottom: 20px;
+    }
+    .contact-text {
+        font-size: 17px;
+        line-height: 25px;
+        text-align: center;
+    }
+    .footer-title {
+        font-size: 38px;
+        line-height: 47px;
+        margin-bottom: 40px;
+    }
+    .header-image {
+        width: 250px;
+        right: 15%;
+        bottom: -4.5%;
+    }
+    .header-icon-image {
+        width: 80px;
+    }
+    .for-more-icon-image {
+        width: 160px;
+    }
+    .header {
+        height: 681px;
+    }
+    .header-icon-wrapper {
+        top: 8%;
+        right: 13%;
+        gap: 10px;
+    }
+    .header-text-group {
+        left: 8%;
+        top: 23%;
+    }
+}
