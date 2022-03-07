@@ -45,7 +45,7 @@ body {
 
 /****************TEXT STYLING***************/
 
-p, span, h4, .header-author-title, .dates, .blog-arrow, ul, .icon-text  {
+p, span, h3, .header-author-title, .dates, .blog-arrow, ul, .icon-text  {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -53,12 +53,12 @@ h1, h2, h3, h4, .project-title-overlay, .arrow, .my-thoughts-extra-title, .blog-
     font-weight: bold;
 }
 
-p, span, h4, .dates, .arrow, .blog-arrow, ul {
+p, span, h3, .dates, .arrow, .blog-arrow, ul {
     font-size: 17px;
     line-height: 29px;
 }
 
-h2, h3, .my-thoughts-extra-title, .tech-text, .project-title-overlay, .tag-wrapper p, .small-text-skills, .icon-text, .footer-title, .contact-text {
+h2, h4, .my-thoughts-extra-title, .tech-text, .project-title-overlay, .tag-wrapper p, .small-text-skills, .icon-text, .footer-title, .contact-text {
     text-align: center;
 }
 
@@ -153,7 +153,7 @@ h2, .my-thoughts-extra-title {
     border-radius: 5px;
 }
 
-h3 {
+h4 {
     font-size: 21px;
     line-height: 25px;
     color: var(--fourth);
@@ -427,7 +427,7 @@ ul {
     .hidden-from-mobile {
         display: inline-block;
     }
-    p, span, h4, .dates, .arrow, .blog-arrow, ul, .icon-text, .intro-text, .tech-text, .contact-text, .tech-highlighted-text {
+    p, span, h3, .dates, .arrow, .blog-arrow, ul, .icon-text, .intro-text, .tech-text, .contact-text, .tech-highlighted-text {
         font-size: 20px;
         line-height: 30px;
     }
@@ -452,7 +452,7 @@ ul {
     .my-thoughts-extra-title {
         margin-bottom: 0;
     }
-    h3 {
+    h4 {
         font-size: 25px;
         line-height: 30px;
         margin-bottom: 40px;
@@ -530,7 +530,7 @@ ul {
         font-size: 50px;
         line-height: 78px;
     }
-    p, span, h4, .dates, .arrow, .blog-arrow, ul, .icon-text {
+    p, span, h3, .dates, .arrow, .blog-arrow, ul, .icon-text {
         font-size: 25px;
         line-height: 41px;
     }
@@ -548,7 +548,7 @@ ul {
     .my-thoughts-extra-title {
         margin-bottom: 0;
     }
-    h3 {
+    h4 {
         font-size: 38px;
         line-height: 47px;
         margin-bottom: 40px;
