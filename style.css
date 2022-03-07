@@ -160,7 +160,7 @@ h4 {
 }
 
 .projects-small-title:hover {
-    z-index: 2;
+    z-index: 3;
     color: #BE9DA9;
 }
 
@@ -405,7 +405,6 @@ ul {
     margin: 0;
     padding: 40px 0;
     background-color: var(--fourth);
-     /* #8E2110; */
 }
 
 .footer-wrapper {
