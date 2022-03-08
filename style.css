@@ -291,6 +291,9 @@ h4 {
     width: 100%;
 }
 
+.project-card {
+    position: relative;
+}
 
 .project-card-margin {
     margin-bottom: 32px;
@@ -312,7 +315,6 @@ h4 {
 
 .project-text-group {
     padding-top: 15px;
-    position: relative;
 }
 
 .tag-wrapper {
