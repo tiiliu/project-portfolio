@@ -395,10 +395,14 @@ ul {
 }
 
 .for-more-icon-container {
+    position: relative;
+}
+
+.nav-icon {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 18px;
+    gap: 12px;
 }
 
 
