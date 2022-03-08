@@ -322,6 +322,7 @@ h4 {
 
 .other-projects {
     margin-bottom: 32px;
+    position: relative;
 }
 
 a:link, a:visited {
