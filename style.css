@@ -433,7 +433,6 @@ ul {
 
 .for-more-icons-wrapper {
     display: flex;
-    width: 100%;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
@@ -441,7 +440,7 @@ ul {
 
 .for-more-icon-container {
     position: relative;
-    width: 180px;
+    width: 120px;
 }
 
 .nav-icon {
@@ -565,6 +564,9 @@ ul {
     }
     .skills-parent {
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .for-more-icon-container {
+        width: 180px;
     }
 }
 
@@ -690,5 +692,11 @@ ul {
     .header-text-group {
         left: 8%;
         top: 23%;
+    }
+    .for-more-icons-wrapper {
+        gap: 2rem;
+    }
+    .for-more-icon-container {
+        width: 250px;
     }
 }
