@@ -17,16 +17,16 @@ body {
 
 /****************GLOBAL SETTINGS***************/
 
-.section {
+section {
     margin: 0;
     padding: 40px 0;
 }
 
-.section:nth-child(2n) {
+section:nth-child(2n) {
     background: linear-gradient(207deg, var(--third) 0%, #ffffff 30%, var(--third) 100%);
 }
 
-.section:nth-child(2n+1) {
+section:nth-child(2n+1) {
     background-color: #fff;
 }
 
@@ -45,32 +45,73 @@ body {
 
 /****************TEXT STYLING***************/
 
-p, span, h3, .header-author-title, .dates, .blog-arrow, ul, .icon-text  {
+p,
+span,
+h3,
+.header-author-title,
+.dates,
+.blog-arrow,
+ul,
+.icon-text  {
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, .project-title-overlay, .arrow, .my-thoughts-extra-title, .blog-small-title, .skills-title, .icon-text, .footer-title  {
+h1,
+h2,
+h3,
+h4,
+.project-title-overlay,
+.arrow,
+.my-thoughts-extra-title,
+.blog-small-title,
+.skills-title,
+.icon-text,
+.footer-title  {
     font-weight: bold;
 }
 
-p, span, h3, .dates, .arrow, .blog-arrow, ul {
+p,
+span,
+h3,
+.dates,
+.arrow,
+.blog-arrow,
+ul {
     font-size: 17px;
     line-height: 29px;
 }
 
-h2, h4, .my-thoughts-extra-title, .tech-text, .project-title-overlay, .tag-wrapper p, .small-text-skills, .icon-text, .footer-title, .contact-text {
+h2,
+h4,
+.my-thoughts-extra-title,
+.tech-text,
+.project-title-overlay,
+.tag-wrapper p,
+.small-text-skills,
+.icon-text,
+.footer-title,
+.contact-text {
     text-align: center;
 }
 
-.dates, .blog-small-title  {
+.dates,
+.blog-small-title  {
     text-decoration: underline;
 }
 
-h2, .project-title-overlay, .tag-wrapper p, .footer-title, .contact-text {
+h2,
+.project-title-overlay,
+.tag-wrapper p,
+.footer-title,
+.contact-text {
     color: #fff;
 }
 
-.projects-small-title, .arrow, .dates, .blog-arrow, .skills-title {
+.projects-small-title, 
+.arrow,
+.dates,
+.blog-arrow,
+.skills-title {
     color: var(--first);
 }
 
@@ -106,11 +147,15 @@ h2, .project-title-overlay, .tag-wrapper p, .footer-title, .contact-text {
     margin-right: 5px;
 }
 
-.intro-text, .tech-text, .tech-highlighted-text, .my-thoughts-extra-title {
+.intro-text,
+.tech-text,
+.tech-highlighted-text,
+.my-thoughts-extra-title {
     font-family: 'Montserrat', sans-serif;
 }
 
-h2, .my-thoughts-extra-title {
+h2,
+.my-thoughts-extra-title {
     font-size: 22px;
     line-height: 27px;
     background-color: var(--fourth);
@@ -231,7 +276,7 @@ h4 {
 .project-image {
     display: flex;
     width: 100%;
-    height: 200px;
+    /* height: 200px; */
     border-radius: 6px;
     box-shadow: 0px 10px 13px -7px var(--fourth);
 }
@@ -285,10 +330,8 @@ h4 {
 
 .featured-projects-container {
     display: grid;
-}
-
-.featured-projects-container, .other-projects-container {
-    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 3rem;
 }
 
 .project-card {
@@ -319,6 +362,8 @@ h4 {
 
 .tag-wrapper {
     display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
     margin-top: 10px;
 }
 
@@ -327,7 +372,8 @@ h4 {
     position: relative;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
     text-decoration: none;
     color: black;
 }
@@ -370,10 +416,9 @@ a:hover {
 .skills-parent {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 44%);
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 1rem;
     justify-content: center;
-    column-gap: 12%;
-    row-gap: 5%;
     margin-bottom: 5%;
 }
 
@@ -390,12 +435,13 @@ ul {
     display: flex;
     width: 100%;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
+    gap: 1rem;
 }
 
 .for-more-icon-container {
     position: relative;
+    width: 180px;
 }
 
 .nav-icon {
@@ -424,7 +470,7 @@ ul {
 
 @media screen and (min-width: 768px) {
 
-    .section {
+    section {
         padding: 60px 0;
     }
     .container {
@@ -433,7 +479,18 @@ ul {
     .hidden-from-mobile {
         display: inline-block;
     }
-    p, span, h3, .dates, .arrow, .blog-arrow, ul, .icon-text, .intro-text, .tech-text, .contact-text, .tech-highlighted-text {
+    p,
+    span,
+    h3,
+    .dates,
+    .arrow,
+    .blog-arrow,
+    ul,
+    .icon-text,
+    .intro-text,
+    .tech-text,
+    .contact-text,
+    .tech-highlighted-text {
         font-size: 20px;
         line-height: 30px;
     }
@@ -449,7 +506,8 @@ ul {
         font-size: 35px;
         line-height: 45px;
     }
-    h2, .my-thoughts-extra-title {
+    h2,
+    .my-thoughts-extra-title {
         font-size: 30px;
         line-height: 30px;
         padding: 5px;
@@ -470,7 +528,8 @@ ul {
         margin-top: 90px;
         margin-bottom: 30px;
     }
-    .projects-title-desktop, .projects-text-desktop {
+    .projects-title-desktop,
+    .projects-text-desktop {
         display: inline;
         text-decoration: underline;
     }
@@ -492,12 +551,6 @@ ul {
         top: 12%;
         right: 13%;
     }
-    .featured-projects-container {
-        display: grid;
-        grid-template-columns: repeat(2, 48%);
-        justify-content: center;
-        grid-gap: 5%;
-    }
     .project-text-group {
         padding-top: 45px;
     }
@@ -511,14 +564,13 @@ ul {
         gap: 57px;
     }
     .skills-parent {
-        grid-template-columns: repeat(3, 23%);
-        column-gap: 15%;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
 }
 
 @media screen and (min-width: 1200px) {
 
-    .section {
+    section {
         padding: 90px 0;
     }
     .container {
@@ -536,15 +588,26 @@ ul {
         font-size: 50px;
         line-height: 78px;
     }
-    p, span, h3, .dates, .arrow, .blog-arrow, ul, .icon-text {
+    p,
+    span,
+    h3,
+    .dates,
+    .arrow,
+    .blog-arrow,
+    ul,
+    .icon-text {
         font-size: 25px;
         line-height: 41px;
     }
-    .intro-text, .tech-text, .contact-text, .tech-highlighted-text {
+    .intro-text,
+    .tech-text,
+    .contact-text,
+    .tech-highlighted-text {
         font-size: 30px;
         line-height: 50px;
     }
-    h2, .my-thoughts-extra-title {
+    h2,
+    .my-thoughts-extra-title {
         font-size: 43px;
         line-height: 59px;
         padding: 5px;
@@ -562,7 +625,9 @@ ul {
     .other-projects-title {
         margin-top: 128px;
     }
-    .projects-title-desktop, .projects-text-desktop, .arrow {
+    .projects-title-desktop,
+    .projects-text-desktop,
+    .arrow {
         line-height: 33px;
     }
     .arrow {
