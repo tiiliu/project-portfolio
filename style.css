@@ -554,10 +554,10 @@ ul {
         padding-top: 45px;
     }
     .project-image-group:hover .project-image-overlay {
-        display: none;
+        opacity: 0;
     }
     .project-image-group:hover .project-title-overlay {
-        display: none;
+        opacity: 0;
     }
     .my-thoughts-wrapper {
         gap: 57px;
