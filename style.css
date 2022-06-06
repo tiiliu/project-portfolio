@@ -348,6 +348,7 @@ a:hover .for-more-icon-image {
     text-decoration: underline;
     margin: 1rem 0;
     padding-right: 10px;
+    font-size: 0.9rem;
 }
 
 .project-text-group a:hover {
