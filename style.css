@@ -336,6 +336,15 @@ a:hover .for-more-icon-image {
 
 .project-text-group {
     padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
 .project-text-group a {
