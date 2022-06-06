@@ -345,6 +345,7 @@ a:hover .for-more-icon-image {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    width: 100%;
 }
 
 .project-text-group a {
@@ -357,6 +358,7 @@ a:hover .for-more-icon-image {
     text-decoration: underline;
     margin: 1rem 0.6rem 1rem 0;
     font-size: 0.9rem;
+    width: 100%;
 }
 
 .project-text-group a:hover {
