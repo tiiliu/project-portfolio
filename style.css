@@ -5,10 +5,12 @@
 
 :root {
     --clr-black: #000000ec;
+    --clr-white: #ffffff;
     --clr-titles:  #ed7966;
     /* #55087f; */
     --clr-background: #C8A2C8;
-    --clr-accent: #212355; 
+    --clr-accent: #212355;
+    --clr-light-accent: #4a4c8082; 
     --clr-hover: #BE9DA9;
 }
     
@@ -144,12 +146,6 @@ h2 {
 
 .arrow {
     letter-spacing: 0.01rem;
-}
-
-.projects-small-title:hover,
-.small-text-projects:hover,
-.arrow:hover {
-    color: var(--clr-background);
 }
 
 .project-title-overlay {
@@ -349,6 +345,9 @@ a:hover .for-more-icon-image {
     display: flex;
     flex-direction: row;
     width: 100%;
+    justify-content: flex-start;
+    margin-top: 0.5rem;
+    gap: 3%;
 }
 
 .link-container a {
@@ -358,13 +357,19 @@ a:hover .for-more-icon-image {
 
     text-decoration: none;
     color: var(--clr-black);
-    text-decoration: underline;
     font-size: 0.9rem;
-    width: 100%;
+    padding: 6px 9px;
+    border-radius: 10px;
+    max-width: 50%;
+    text-align: center;
+    -webkit-box-shadow: 2px 3px 12px 0px var(--clr-hover), 5px 5px 15px 5px rgba(79,51,79,0); 
+    box-shadow: 2px 3px 12px 0px var(--clr-hover), 5px 5px 15px 5px rgba(79,51,79,0);
 }
 
-.link-container a:hover {
-    text-decoration: none;
+.other-project-links {
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 0.5rem;
 }
 
 .tag-wrapper {
@@ -376,6 +381,12 @@ a:hover .for-more-icon-image {
 
 .other-projects {
     margin-bottom: 2rem;
+}
+
+.other-project-small-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 
@@ -486,12 +497,8 @@ ul {
         margin-bottom: 30px;
     }
     .projects-title-desktop,
-    .projects-text-desktop,
-    .arrow {
-        line-height: 30px;
-    }
     .projects-text-desktop {
-        text-decoration: underline;
+        line-height: 30px;
     }
     .header-image {
         width: 140px;
@@ -524,6 +531,13 @@ ul {
         height: 180px;
         justify-content: space-between;
         gap: 0;
+    }
+    .link-container a {
+        padding: 7px;
+    }
+    .link-container a:hover {
+        background: var(--clr-light-accent);
+        color: var(--clr-white);
     }
     .skills-parent {
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -569,12 +583,8 @@ ul {
         margin-top: 70px;
     }
     .projects-title-desktop,
-    .projects-text-desktop,
-    .arrow {
+    .projects-text-desktop {
         line-height: 40px;
-    }
-    .arrow {
-        text-decoration: underline;
     }
     .tag-wrapper p {
         font-size: 1rem;
@@ -623,6 +633,17 @@ ul {
     }
     .for-more-icon-container {
         width: 225px;
+    }
+    .project-small-text-wrapper {
+        height: 190px;
+        gap: 0;
+    }
+    .link-container {
+        justify-content: space-between;
+        gap: 0;
+    }
+    .link-container a {
+        padding: 8px 10px;
     }
     .other-projects {
         margin-bottom: 3.5rem;
