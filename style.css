@@ -552,6 +552,9 @@ ul {
     .featured-projects-container {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
+    .project-link-styler:hover h3 {
+        color: var(--clr-light-accent);
+    }
     .link-container a {
         padding: 7px;
     }
