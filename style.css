@@ -457,6 +457,14 @@ ul {
 }
 
 
+/****************MEDIA QUERY FOR VERY SMALL DEVICES***************/
+@media screen and (max-width: 300px) {
+    .project-card,
+    .other-projects {
+        max-width: 250px;
+    }
+}
+
 /****************MEDIA QUERY FOR TABLET AND LAPTOPS***************/
 
 @media screen and (min-width: 668px) {
@@ -543,10 +551,12 @@ ul {
     .project-small-text-wrapper {
         height: 180px;
         justify-content: space-between;
-        gap: 1rem;
     }
     .featured-projects-container {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .link-container {
+        margin: 0;
     }
     .link-container a {
         padding: 7px;
