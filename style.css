@@ -339,10 +339,6 @@ a:hover .for-more-icon-image {
 }
 
 .link-container a {
-    /* -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button; */
-
     text-decoration: none;
     color: var(--clr-black);
     font-size: 0.9rem;
